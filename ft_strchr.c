@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: huzeyfe <huzeyfe@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/06 00:43:23 by huzeyfe           #+#    #+#             */
-/*   Updated: 2026/01/06 01:13:47 by huzeyfe          ###   ########.fr       */
+/*   Created: 2026/01/06 12:51:57 by hutokgoz          #+#    #+#             */
+/*   Updated: 2026/01/06 13:02:07 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strchr(const char *s, int c)
 {
 	char	k;
 
-	k = (char)c;
+	k = c + 48;
 	while (*s != '\0')
 	{
 		if (*s == k)
