@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 14:08:37 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/06 16:25:43 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/07 18:18:07 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	unsigned int	i;
+
 	if (n == 0)
 	{
 		return (0);
@@ -24,5 +25,5 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	{
 		i++;
 	}
-	return(s1[i] - s2[i]);
+	return (s1[i] - s2[i]);
 }

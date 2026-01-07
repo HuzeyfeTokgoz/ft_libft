@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 12:52:05 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/06 12:52:27 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/07 21:06:05 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strrchr(const char *s, int c)
 	{
 		if (s[i] == (char)c)
 		{
-			return ((char *)(s + i));
+			return ((char *)s);
 		}
 		i--;
 	}

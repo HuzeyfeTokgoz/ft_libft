@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 15:20:20 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/06 18:52:08 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/07 18:17:16 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t i;
-	size_t j;
+	size_t	i;
+	size_t	j;
 
 	if (!little)
 		return ((char *)big);
@@ -28,19 +28,11 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		{
 			if (little[j + 1] == '\0')
 			{
-				return ((char *)&big[i]);		
+				return ((char *)&big[i]);
 			}
 			j++;
 		}
 		i++;
 	}
 	return (NULL);
-	
-
-
-}
-
-
-int main(){
-	printf("%s", ft_strnstr("helloworld","ela",2));
 }
