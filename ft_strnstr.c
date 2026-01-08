@@ -6,11 +6,10 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 15:20:20 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/07 18:17:16 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/08 14:57:42 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
