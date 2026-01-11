@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 12:51:36 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/06 12:52:46 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/11 19:51:52 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 int	isascii(int c)
 {
-	while (c >= 0 && c <= 127)
-	{
+	if (c >= 0 && c <= 127)
 		return (1);
-	}
 	return (0);
 }

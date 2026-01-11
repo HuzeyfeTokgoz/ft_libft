@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 12:30:22 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/08 14:56:24 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/11 19:03:12 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strdup(const char *s)
 	i = 0;
 	size = ft_strlen(s);
 	dest = (char *)malloc(sizeof(char) * (size + 1));
-	if(!dest)
+	if (!dest)
 	{
 		return (NULL);
 	}
@@ -30,6 +30,6 @@ char	*ft_strdup(const char *s)
 		dest[i] = s[i];
 		i++;
 	}
-	dest = '\0';
+	dest[i] = '\0';
 	return (dest);
 }

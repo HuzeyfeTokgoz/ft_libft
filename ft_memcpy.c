@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 21:21:45 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/07 22:17:57 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/11 19:54:27 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*k;
 	unsigned char	*l;
 
-	if (src)
+	if (!src || !dest)
 	{
 		return (NULL);
 	}

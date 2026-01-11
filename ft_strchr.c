@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 12:51:57 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/07 21:04:52 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/11 20:07:41 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,6 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	if ((char)c == '\0')
-	{
-		return ((char *)s);
-	}
 	while (*s != '\0')
 	{
 		if (*s == (char)c)
@@ -26,5 +22,14 @@ char	*ft_strchr(const char *s, int c)
 		}
 		s++;
 	}
+	if (*s == (char)c)
+		return ((char *)s);
 	return (NULL);
+}
+#include <stdio.h>
+
+int main(){
+	char *s = "hello";
+	char c= 'l';
+	printf("%s",ft_strchr(s,c));
 }

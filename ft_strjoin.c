@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 15:52:30 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/08 16:10:59 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/11 19:12:46 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,15 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	str1;
-	size_t	str2;
 	size_t	i;
 	size_t	j;
 	char	*res;
 
-	if(!s1 || !s2)
-	{
+	if (!s1 || !s2)
 		return (NULL);
-	}
-	str1 = ft_strlen(s1);
-	str2 = ft_strlen(s2);
-
-	res = (char *)malloc(sizeof(char)*(str1 + str2 + 1));
+	res = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (!res)
-	{
 		return (NULL);
-	}
 	i = 0;
 	while (s1[i] != '\0')
 	{
@@ -52,6 +43,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 int main()
 {
     char *s1 = "Merhaba ";
-    char *s2 = "Dünya";
+    char *s2 = "dünya";
     printf("%s", ft_strjoin(s1, s2));
 }

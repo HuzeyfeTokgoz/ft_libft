@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 12:52:09 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/06 12:52:26 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/11 20:40:11 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-	{
 		return (c - 32);
-	}
 	return (c);
 }
