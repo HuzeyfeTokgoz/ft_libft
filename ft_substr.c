@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 14:59:21 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/11 20:31:48 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/13 18:05:02 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,11 +44,4 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	d[i] = '\0';
 	return (d);
-}
-
-#include <stdio.h>
-int main(){
-	char *s = "huzeyfe";
-	char *k = ft_substr(s,2,4);
-	printf("%s", k);
 }

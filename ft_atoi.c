@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 18:20:28 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/07 21:52:37 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/13 17:16:58 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_atoi(const char *nptr)
 {
-	unsigned long long	sum;
+	unsigned long	sum;
 	int					sign;
 
 	sum = 0;

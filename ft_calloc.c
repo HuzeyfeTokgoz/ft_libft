@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 23:13:20 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/09 18:15:50 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/13 18:43:14 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	total = nmemb * size;
 	str = malloc(total);
 	if (str == NULL)
-	{
 		return (NULL);
-	}
 	ft_memset(str, 0, total);
 	return (str);
 }

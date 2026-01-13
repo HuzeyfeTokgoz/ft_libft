@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 14:29:22 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/11 21:47:26 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/13 18:34:35 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,11 @@
 
 static int	wordCount(const char *str, char c)
 {
-	int i;
 	int count;
 	int flag;
 
 	flag = 0;
 	count = 0;
-	i = 0;
 	while (*str)
 	{
 		if (*str != c && (*str - 1 == c || str[0]) && flag == 0)
@@ -29,9 +27,7 @@ static int	wordCount(const char *str, char c)
 			count++;
 		}
 		else if(*str == c)
-		{
 			flag = 0;
-		}
 		str++;
 	}
 	return (count);
@@ -47,37 +43,33 @@ static int	wordlen(const char *str,char c)
 	}
 	return (len);
 }
-static char *wordadd (char *s,char c)
+static char	**free_all(char **dest, int i)
 {
-	int		i;
-	int 	word_len;
-	
-	i = 0;
-	word_len = wordlen(s, c);
-	while (*s == c && *s != '\0')
-		s++;
-	if (*s != c)
-	{
-		*s = ft_substr(s, 0, word_len);
-		if (!s[i])
-			ft_bzero(s[i], word_len);
-	}
-	return (s);
+	while (i > 0)
+		free(dest[--i]);
+	free(dest);
+	return (NULL);
 }
 char	**ft_split(char const *s, char c)
 {
 	char	**dest;
 	int		count;
-	int i;
+	int		i;
 	
 	i = 0;
+	if (!s)
+		return (NULL);
 	count = wordCount(s, c);
-	dest = (char **)malloc(sizeof(char *) * count + 1);
+	dest = (char **)malloc(sizeof(char *) * (count + 1));
 	if (!dest)
 		return (NULL);
 	while (*s)
 	{
-		wordadd(dest[i], c); 
+		while (*s == c)
+			s++;
+		dest[i] = ft_substr(s, 0, wordlen(s, c));
+		if (!dest)
+			return (free_all(dest, i));
 		s += wordlen(s, c);
 		i++;
 	}
@@ -87,15 +79,16 @@ char	**ft_split(char const *s, char c)
 #include <stdio.h>
 int main()
 {
-	char str[] = "  hello   worldsadwsd  ";
+	char str[] = "  hello   worldsadwsd  a sss";
 	char c = ' ';
-	char *a = ft_split(str,c);
+	char **a = ft_split(str,c);
 	int i = 0;
 	//printf("%s",a);
 	while (a[i])
-			{
-				printf("%s\n", a[i]);
-				free(a[i]);
-				i++;
-			}
+	{
+		printf("%s\n", a[i]);
+		free(a[i]);
+		i++;
+	}
+	free(a);
 }
