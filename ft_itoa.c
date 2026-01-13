@@ -3,42 +3,62 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.com.t +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 18:48:42 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/13 19:52:11 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/13 23:22:40 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_itoa(int n)
+static int	word_len(long n)
 {
-	char *s;
-	int	k;
-	int len;
+	int	len;
 
-	len  = 0;
-	k = 0;
-	s = 0;
+	len = 1;
 	if (n < 0)
 	{
-		k = 1;
+		len++;
 		n *= -1;
 	}
-	if (n == 0)
+	while (n > 9)
 	{
-		len = 0;
+		n = n / 10;
+		len++;
 	}
-	if (n > 9)
+	return (len);
+}
+
+char	*ft_itoa(int n)
+{
+	char	*dest;
+	long	nb;
+	int		len;
+
+	nb = n;
+	len = word_len(nb);
+	dest = (char *)malloc(sizeof(char) * len + 1);
+	if (!dest)
+		return (NULL);
+	dest[len--] = '\0';
+	if (nb == 0)
+		dest[0] = '0';
+	if (nb < 0)
 	{
-		ft_itoa(n / 10);
+		dest[0] = '-';
+		nb *= -1;
 	}
-	if (n < 9)
+	while (nb > 0)
 	{
-		word_add(n % 10);
+		dest[len--] = (nb % 10) + '0';
+		nb = nb / 10;
 	}
-	
-//	sayı = -206;	
-	dest = (char *)malloc(sizeof(char) * (len + k));
+	return (dest);
+}
+
+int main(){
+	char *s = ft_itoa(-265);
+	printf("%s\n", s);
+	free(s);
 }
