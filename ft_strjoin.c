@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hutokgoz <hutokgoz@student.42kocaeli.com.t +#+  +:+       +#+        */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 15:52:30 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/14 11:35:58 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/14 22:23:38 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (res);
 }
 
-// #include <stdio.h>
-// int main()
-// {
-//     char *s1 = "Merhaba ";
-//     char *s2 = "dünya";
-//     printf("%s", ft_strjoin(s1, s2));
-// }
+#include <stdio.h>
+int main()
+{
+    char *s1 = "Merhaba ";
+    char *s2 = "dünya";
+	char *k = ft_strjoin(s1, s2);
+    printf("%s", k);
+	free(k);
+}

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hutokgoz <hutokgoz@student.42kocaeli.com.t +#+  +:+       +#+        */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 18:48:42 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/14 11:37:26 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/14 23:24:00 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,8 +57,8 @@ char	*ft_itoa(int n)
 	return (dest);
 }
 
-// int main(){
-// 	char *s = ft_itoa(-265);
-// 	printf("%s\n", s);
-// 	free(s);
-// }
+int main(){
+	char *s = ft_itoa(-265);
+	printf("%s\n", s);
+	free(s);
+}

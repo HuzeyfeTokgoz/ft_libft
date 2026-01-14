@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hutokgoz <hutokgoz@student.42kocaeli.com.t +#+  +:+       +#+        */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 09:41:26 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/14 11:39:19 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/14 23:33:23 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char(*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int		s_len;
-	char	*dest;
-	unsigned	i;
+	int				s_len;
+	char			*dest;
+	unsigned int	i;
 
 	s_len = 0;
 	i = 0;
@@ -37,18 +37,22 @@ char	*ft_strmapi(char const *s, char(*f)(unsigned int, char))
 	return (dest);
 }
 
-// char	deneme(unsigned int s, char c)
-// {
-// 	if(s % 2 == 0)
-// 	{
-// 		if ('a' <= c && c <= 'z')
-// 			return(c - 32);
-// 	}
-// 	return (c);
-// }
-// int main(){
-// 	char *k = "merhaba";
-// 	char *d = ft_strmapi(k, deneme);
-// 	printf("%s", d);
-// 	free(d);
-// }
+char deneme(unsigned int i, char c)
+{
+	while (i % 2 == 0)
+	{
+		if (c)
+		{
+			c -= 32;
+		}
+		return (c);
+	}
+	return (c);
+}
+
+int main(){
+	char *s = "merhaba";
+	char *k = ft_strmapi(s, deneme);
+	printf("%s", k);
+	free(k);
+}

@@ -1,67 +1,45 @@
-#include <stdio.h>
-#include <string.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   DENEME.C                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/14 22:38:10 by hutokgoz          #+#    #+#             */
+/*   Updated: 2026/01/14 22:45:51 by hutokgoz         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-// SENIN MANTIĞIN (Sadece j < len)
-char    *ft_strnstr_wrong(const char *big, const char *little, size_t len)
+#include "libft.h"
+
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-    size_t  i;
-    size_t  j;
+	const char	*p;
+	size_t		i;
 
-    if (*little == '\0')
-        return ((char *)big);
-    i = 0;
-    while (big[i] != '\0' && i < len)
-    {
-        j = 0;
-        // HATA BURADA: i + j kontrolü eksik
-        while (big[i + j] == little[j] && j < len)
-        {
-            if (little[j + 1] == '\0')
-                return ((char *)&big[i]);
-            j++;
-        }
-        i++;
-    }
-    return (NULL);
+	p = (const char *)s;
+	i = 0;
+	while (i < n)
+	{
+		if (p[i] == (char) c)
+			return ((void *)(p + i));
+		i++;
+	}
+	return (NULL);
 }
-
-// DOĞRU MANTIK ( (i + j) < len )
-char    *ft_strnstr_right(const char *big, const char *little, size_t len)
+int main(void)
 {
-    size_t  i;
-    size_t  j;
+    char    str[] = "Gemini ile C programlama";
+    char    target = 'i';
+    char    *result;
 
-    if (*little == '\0')
-        return ((char *)big);
-    i = 0;
-    while (big[i] != '\0' && i < len)
-    {
-        j = 0;
-        while ( (i + j) < len && big[i + j] == little[j])
-        {
-            if (little[j + 1] == '\0')
-                return ((char *)&big[i]);
-            j++;
-        }
-        i++;
-    }
-    return (NULL);
-}
-
-int main()
-{
-    char big[] = "ABCDEFG";
-    char little[] = "CDE";
-    size_t len = 4;
-
-    printf("Metin: %s | Aranan: %s | Sinir: %zu\n", big, little, len);
-    printf("-------------------------------------------\n");
+    // 'void *' dönüş değerini 'char *' tipine cast ediyoruz
+    result = (char *)ft_memchr(str, target, 15);
     
-    char *res1 = ft_strnstr_wrong(big, little, len);
-    printf("Senin mantigin (j < len) sonucu:    %s\n", res1 ? res1 : "NULL (Bulunamadi)");
+    if (result)
+        printf("Bulundu: %s (Adres farki: %ld)\n", result, result - str);
+    else
+        printf("Karakter bulunamadi.\n");
 
-    char *res2 = ft_strnstr_right(big, little, len);
-    printf("Dogru mantik ((i+j) < len) sonucu:  %s\n", res2 ? res2 : "NULL (Bulunamadi)");
-
-    return 0;
+    return (0);
 }

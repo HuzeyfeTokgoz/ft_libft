@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hutokgoz <hutokgoz@student.42kocaeli.com.t +#+  +:+       +#+        */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 12:51:51 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/14 11:35:24 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/14 23:43:44 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*k;
 
 	if (!s)
@@ -29,11 +29,11 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main(){
-// 	 char k[] = "asd";
-// 	int c = 'i';
-// 	char *a = ft_memset(k,c,10);
-// 	printf("%s",a);
-// }
+int main(){
+	 char k[] = "asd";
+	int c = 'i';
+	char *a = (char *)ft_memset(k,c,10);
+	printf("%s",a);
+}

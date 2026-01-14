@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hutokgoz <hutokgoz@student.42kocaeli.com.t +#+  +:+       +#+        */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 12:51:57 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/14 11:35:44 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/14 23:45:09 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,6 @@ char	*ft_strchr(const char *s, int c)
 
 // int main(){
 // 	char *s = "hello";
-// 	char c= 'l';
+// 	char c = 'l';
 // 	printf("%s",ft_strchr(s,c));
 // }

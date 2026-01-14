@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 14:59:21 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/13 18:05:02 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/14 22:29:41 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,23 +19,15 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	s_len;
 
 	if (!s)
-	{
 		return (NULL);
-	}
 	s_len = ft_strlen(s);
 	if ((size_t)start >= s_len)
-	{
-		return(ft_strdup(""));
-	}
+		return (ft_strdup(""));
 	if (len > s_len - (size_t)start)
-	{
 		len = s_len - (size_t)start;
-	}
 	d = (char *)malloc(sizeof(char) * (len + 1));
 	if (!d)
-	{
 		return (NULL);
-	}
 	i = 0;
 	while (len > i)
 	{
@@ -45,3 +37,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	d[i] = '\0';
 	return (d);
 }
+
+
+// int main(){
+// 	char *s = "merhaba";
+// 	char *k = ft_substr(s,0,4);
+// 	printf("%s", k);
+// 	free(k);
+// }

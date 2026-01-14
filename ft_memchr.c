@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hutokgoz <hutokgoz@student.42kocaeli.com.t +#+  +:+       +#+        */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 22:30:07 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/14 11:42:09 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/14 22:57:18 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,17 +25,17 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	{
 		if (str[i] == chr)
 		{
-			return (&str[i]);
+			return ((void *)(str + i));
 		}
 		i++;
 	}
 	return (NULL);
 }
 
-// #include <stdio.h>
-// int main(){
-// 	char *s = "12ss345";
-// 	int c = 's';
-// 	char *d = ft_memchr(s,c,5);
-// 	printf("%s", d);
-// }
+#include <stdio.h>
+int main(){
+	char s[] = "12ss345";
+	int c = 's';
+	char *d = (char *)ft_memchr(s,c,5);
+	printf("%s", d);
+}
