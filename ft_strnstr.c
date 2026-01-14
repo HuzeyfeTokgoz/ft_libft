@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.com.t +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 15:20:20 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/11 20:27:05 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/14 11:36:18 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (NULL);
 }
 
-#include <stdio.h>
-int main(){
-	char *s = "hello world abi";
-	char *c = "wo";
-	int n = 7;
-	printf("%s", ft_strnstr(s,c,n));
-}
+// #include <stdio.h>
+// int main(){
+// 	char *s = "hello world abi";
+// 	char *c = "wo";
+// 	int n = 7;
+// 	printf("%s", ft_strnstr(s,c,n));
+// }

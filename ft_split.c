@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.com.t +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 14:29:22 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/13 18:34:35 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/14 11:41:30 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static int	wordCount(const char *str, char c)
 {
-	int count;
-	int flag;
+	int	count;
+	int	flag;
 
 	flag = 0;
 	count = 0;
@@ -26,16 +26,17 @@ static int	wordCount(const char *str, char c)
 			flag = 1;
 			count++;
 		}
-		else if(*str == c)
+		else if (*str == c)
 			flag = 0;
 		str++;
 	}
 	return (count);
 }
-static int	wordlen(const char *str,char c)
+
+static int	wordlen(const char *str, char c)
 {
-	int len;
-	
+	int	len;
+
 	len = 0;
 	while (str[len] && str[len] != c)
 	{
@@ -43,6 +44,7 @@ static int	wordlen(const char *str,char c)
 	}
 	return (len);
 }
+
 static char	**free_all(char **dest, int i)
 {
 	while (i > 0)
@@ -50,6 +52,7 @@ static char	**free_all(char **dest, int i)
 	free(dest);
 	return (NULL);
 }
+
 char	**ft_split(char const *s, char c)
 {
 	char	**dest;
@@ -76,19 +79,20 @@ char	**ft_split(char const *s, char c)
 	dest[i] = NULL;
 	return (dest);
 }
-#include <stdio.h>
-int main()
-{
-	char str[] = "  hello   worldsadwsd  a sss";
-	char c = ' ';
-	char **a = ft_split(str,c);
-	int i = 0;
-	//printf("%s",a);
-	while (a[i])
-	{
-		printf("%s\n", a[i]);
-		free(a[i]);
-		i++;
-	}
-	free(a);
-}
+
+// #include <stdio.h>
+// int main()
+// {
+// 	char str[] = "  hello   worldsadwsd  a sss";
+// 	char c = ' ';
+// 	char **a = ft_split(str,c);
+// 	int i = 0;
+// 	//printf("%s",a);
+// 	while (a[i])
+// 	{
+// 		printf("%s\n", a[i]);
+// 		free(a[i]);
+// 		i++;
+// 	}
+// 	free(a);
+// }

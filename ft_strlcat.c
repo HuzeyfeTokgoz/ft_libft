@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.com.t +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 13:43:35 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/11 19:41:11 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/14 11:36:02 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ size_t  ft_strlcat(char *dst, const char *src, size_t size)
     return (dst_len + src_len);
 }
 
-int main()
-{
+// int main()
+// {
 	
-	char *dest[11] = "huzey";
-	char *src = "fe";
-}
+// 	char *dest[11] = "huzey";
+// 	char *src = "fe";
+// }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.com.t +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 16:49:12 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/11 20:36:36 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/14 11:36:33 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,12 +47,12 @@ char	*ft_strtrim(const char *s1, const char *set)
 	return (dest);
 }
 
-#include <stdio.h>
-int main()
-{
-	char s1[] = "bahelloaba";
-	char c[] = "ab"; 
-	char *a = ft_strtrim(s1, c);
-	printf("%s", a);	
-}
+// #include <stdio.h>
+// int main()
+// {
+// 	char s1[] = "bahelloaba";
+// 	char c[] = "ab"; 
+// 	char *a = ft_strtrim(s1, c);
+// 	printf("%s", a);	
+// }
 	

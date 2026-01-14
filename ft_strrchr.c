@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.com.t +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 12:52:05 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/11 17:45:44 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/14 11:36:25 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,11 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-#include <stdio.h>
 
-int main(){
-	char *s = "hello";
-	char c= 'e';
-	printf("%s",ft_strrchr(s,c));
-}
+// #include <stdio.h>
+
+// int main(){
+// 	char *s = "hello";
+// 	char c= 'e';
+// 	printf("%s",ft_strrchr(s,c));
+// }

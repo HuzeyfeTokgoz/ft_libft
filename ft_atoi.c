@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.com.t +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 18:20:28 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/13 17:16:58 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/14 11:43:40 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_atoi(const char *nptr)
 {
 	unsigned long	sum;
-	int					sign;
+	int				sign;
 
 	sum = 0;
 	sign = 1;

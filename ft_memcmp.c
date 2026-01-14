@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.com.t +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 22:52:32 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/11 19:41:48 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/14 11:42:34 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,11 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-#include <stdio.h>
-int main()
-{
-	char	*k1 = "assd";
-	char	*k2 = "assd";
-	printf("%d", ft_memcmp(k1, k2, 4));
-}
+
+// #include <stdio.h>
+// int main()
+// {
+// 	char	*k1 = "assd";
+// 	char	*k2 = "assd";
+// 	printf("%d", ft_memcmp(k1, k2, 4));
+// }
