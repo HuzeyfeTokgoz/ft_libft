@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 14:59:21 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/14 22:29:41 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/15 15:22:56 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*d;
+	char	*dst;
 	size_t	i;
 	size_t	s_len;
 
@@ -25,23 +25,23 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (ft_strdup(""));
 	if (len > s_len - (size_t)start)
 		len = s_len - (size_t)start;
-	d = (char *)malloc(sizeof(char) * (len + 1));
-	if (!d)
+	dst = (char *)malloc(sizeof(char) * (len + 1));
+	if (!dst)
 		return (NULL);
 	i = 0;
 	while (len > i)
 	{
-		d[i] = s[(size_t)start + i];
+		dst[i] = s[(size_t)start + i];
 		i++;
 	}
-	d[i] = '\0';
-	return (d);
+	dst[i] = '\0';
+	return (dst);
 }
 
-
-// int main(){
+// int main()
+// {
 // 	char *s = "merhaba";
-// 	char *k = ft_substr(s,0,4);
-// 	printf("%s", k);
-// 	free(k);
+// 	char *d = ft_substr(s, 3, 10);
+// 	printf("%s", d);
+// 	free(d);
 // }

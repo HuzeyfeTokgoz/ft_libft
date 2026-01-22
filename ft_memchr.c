@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 22:30:07 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/14 22:57:18 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/22 23:33:23 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (n > i)
 	{
 		if (str[i] == chr)
-		{
 			return ((void *)(str + i));
-		}
 		i++;
 	}
 	return (NULL);

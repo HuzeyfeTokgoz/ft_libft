@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hutokgoz <hutokgoz@student.42kocaeli.com.t +#+  +:+       +#+        */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 14:08:37 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/14 11:36:14 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/15 15:46:03 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,9 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 
-// #include <stdio.h>
-// int main(){
-// 	char *a = "hello";
-// 	char *b = "helloo";
-// 	int n = 10;
-// 	printf("%d", ft_strncmp(a,b,n));
-// }
+int main(){
+	char *s1 = "merhaba";
+	char *s2 = "merhabaa";
+	int a = ft_strncmp(s1,s2, 10);
+	printf("%d", a);
+}

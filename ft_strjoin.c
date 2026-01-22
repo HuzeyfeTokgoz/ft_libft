@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 15:52:30 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/14 22:23:38 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/15 16:12:40 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (!res)
 		return (NULL);
 	i = 0;
-	while (s1[i] != '\0')
+	while (s1[i])
 	{
 		res[i] = s1[i];
 		i++;
 	}
 	j = 0;
-	while (s2[j] != '\0')
+	while (s2[j])
 	{
 		res[i + j] = s2[j];
 		j++;
@@ -39,12 +39,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (res);
 }
 
-#include <stdio.h>
-int main()
-{
-    char *s1 = "Merhaba ";
-    char *s2 = "dünya";
-	char *k = ft_strjoin(s1, s2);
-    printf("%s", k);
+
+int main(){
+	char *s = "merhaba ";
+	char *d = "dünya";
+	char *k = ft_strjoin(s, d);
+	printf("%s", k);
 	free(k);
 }

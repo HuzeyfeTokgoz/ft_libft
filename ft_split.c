@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 14:29:22 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/14 22:07:25 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/22 22:07:15 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,7 @@ static int	word_len(const char *str, char c)
 
 	len = 0;
 	while (str[len] && str[len] != c)
-	{
 		len++;
-	}
 	return (len);
 }
 

@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 09:41:26 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/14 23:33:23 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/15 16:17:56 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	s_len = 0;
 	i = 0;
 	if (!s || !f)
-	{
 		return (NULL);
-	}
 	s_len = ft_strlen(s);
 	dest = (char *)malloc(sizeof(char) * (s_len + 1));
 	if (!dest)
@@ -37,22 +35,19 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (dest);
 }
 
-char deneme(unsigned int i, char c)
+static char deneme(unsigned int i, char c)
 {
-	while (i % 2 == 0)
+	if (i % 2 == 0)
 	{
-		if (c)
-		{
-			c -= 32;
-		}
-		return (c);
+		c -= 32;
 	}
-	return (c);
+	return(c);
 }
 
 int main(){
 	char *s = "merhaba";
-	char *k = ft_strmapi(s, deneme);
-	printf("%s", k);
-	free(k);
+	char *d = ft_strmapi(s, deneme);
+	printf("%s", d);
+	printf("%s", s);
+	free(d);
 }

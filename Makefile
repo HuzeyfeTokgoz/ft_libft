@@ -7,11 +7,9 @@ OBJS    = $(SRCS:.c=.o)
 
 all: $(NAME)
 
-# $(NAME) kuralı $(OBJS)'e bağımlı. 
 $(NAME): $(OBJS)
 	ar rc $(NAME) $(OBJS)
 
-# .c dosyalarını tek tek .o'ya çeviren kural
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
