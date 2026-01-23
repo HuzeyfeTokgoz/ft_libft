@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 14:08:37 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/15 15:46:03 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/23 12:38:03 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,4 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		i++;
 	}
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
-}
-
-int main(){
-	char *s1 = "merhaba";
-	char *s2 = "merhabaa";
-	int a = ft_strncmp(s1,s2, 10);
-	printf("%d", a);
 }

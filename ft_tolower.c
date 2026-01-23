@@ -6,13 +6,13 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 12:52:09 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/15 15:03:37 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/23 15:30:52 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-		return (c - 32);
+		c += 32;
 	return (c);
 }

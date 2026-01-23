@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 11:23:49 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/14 20:35:45 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/23 16:28:21 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@ void	ft_putnbr_fd(int n, int fd)
 	long	nb;
 
 	nb = n;
-	if (n < 0)
+	if (nb < 0)
 	{
 		ft_putchar_fd('-', fd);
 		nb = -nb;
 	}
-	if (n > 9)
+	if (nb > 9)
 		ft_putnbr_fd(nb / 10, fd);
 	ft_putchar_fd(nb % 10 + '0', fd);
 }

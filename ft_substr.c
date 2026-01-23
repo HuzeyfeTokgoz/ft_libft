@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 14:59:21 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/15 15:22:56 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/23 13:04:58 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	dst[i] = '\0';
 	return (dst);
 }
-
-// int main()
-// {
-// 	char *s = "merhaba";
-// 	char *d = ft_substr(s, 3, 10);
-// 	printf("%s", d);
-// 	free(d);
-// }

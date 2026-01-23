@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 15:52:30 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/15 16:12:40 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/23 12:48:35 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,4 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	res[i + j] = '\0';
 	return (res);
-}
-
-
-int main(){
-	char *s = "merhaba ";
-	char *d = "dünya";
-	char *k = ft_strjoin(s, d);
-	printf("%s", k);
-	free(k);
 }

@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 12:51:51 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/14 23:43:44 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/23 14:48:05 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,4 @@ void	*ft_memset(void *s, int c, size_t n)
 		i++;
 	}
 	return (s);
-}
-
-#include <stdio.h>
-
-int main(){
-	 char k[] = "asd";
-	int c = 'i';
-	char *a = (char *)ft_memset(k,c,10);
-	printf("%s",a);
 }

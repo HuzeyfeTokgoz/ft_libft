@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 23:13:20 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/14 22:13:24 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/23 15:32:34 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,4 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		return (NULL);
 	ft_memset(str, 0, total);
 	return (str);
-}
-
-int main()
-{
-
-	char *s = ft_calloc(3, sizeof(char));	
-	s[0] = 'a';
-	printf("%s", s);
-	free(s);
 }

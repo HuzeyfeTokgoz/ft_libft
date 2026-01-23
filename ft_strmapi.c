@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 09:41:26 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/15 16:17:56 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/23 12:41:12 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,21 +33,4 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	dest[i] = '\0';
 	return (dest);
-}
-
-static char deneme(unsigned int i, char c)
-{
-	if (i % 2 == 0)
-	{
-		c -= 32;
-	}
-	return(c);
-}
-
-int main(){
-	char *s = "merhaba";
-	char *d = ft_strmapi(s, deneme);
-	printf("%s", d);
-	printf("%s", s);
-	free(d);
 }

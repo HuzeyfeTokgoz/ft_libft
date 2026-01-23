@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 12:52:05 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/22 23:42:05 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/23 12:18:44 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,4 @@ char	*ft_strrchr(const char *s, int c)
 		i--;
 	}
 	return (NULL);
-}
-
-int main(){
-	char *s = "merhaba";
-	char c = 'r';
-	char *d = ft_strrchr(s,c);
-	printf("%s", d);
 }

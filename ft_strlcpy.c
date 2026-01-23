@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 13:29:32 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/15 16:01:37 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/23 14:52:57 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,4 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	dst[i] = '\0';
 	return (src_len);
-}
-
-int main(){
-
 }

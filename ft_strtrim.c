@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 16:49:12 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/15 15:22:26 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/23 12:26:43 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,12 +44,4 @@ char	*ft_strtrim(const char *s1, const char *set)
 		end--;
 	dest = ft_substr(s1, start, end - start);
 	return (dest);
-}
-
-int main(){
-	char *s = "abaabcmerhabakac";
-	char *set = "bac";
-	char *d = ft_strtrim(s, set);
-	printf("%s", d);
-	free(d);
 }

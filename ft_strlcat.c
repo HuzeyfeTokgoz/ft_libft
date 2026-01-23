@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 13:43:35 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/22 23:40:21 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/23 14:52:53 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,4 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	if (dst_len < size)
 		dst[dst_len + i] = '\0';
 	return (dst_len + src_len);
-}
-
-int main(){
-	char *d = "mehmet";
-	char *s = "ayşe";
 }

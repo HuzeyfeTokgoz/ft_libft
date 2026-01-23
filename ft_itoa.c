@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 18:48:42 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/14 23:24:00 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/23 15:19:09 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,10 +55,4 @@ char	*ft_itoa(int n)
 		nb = nb / 10;
 	}
 	return (dest);
-}
-
-int main(){
-	char *s = ft_itoa(-265);
-	printf("%s\n", s);
-	free(s);
 }

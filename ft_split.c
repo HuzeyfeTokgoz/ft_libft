@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 14:29:22 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/22 22:07:15 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/23 16:30:06 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static int	word_count(const char *str, char c)
 	count = 0;
 	while (*str)
 	{
-		if (*str != c && (*str - 1 == c || str[0]) && flag == 0)
+		if (*str != c && flag == 0)
 		{
 			flag = 1;
 			count++;
@@ -45,8 +45,8 @@ static int	word_len(const char *str, char c)
 
 static char	**free_all(char **dest, int i)
 {
-	while (i > 0)
-		free(dest[--i]);
+	while (i >= 0)
+		free(dest[i--]);
 	free(dest);
 	return (NULL);
 }
@@ -64,33 +64,16 @@ char	**ft_split(char const *s, char c)
 	dest = (char **)malloc(sizeof(char *) * (count + 1));
 	if (!dest)
 		return (NULL);
-	while (*s)
+	while (count > i)
 	{
 		while (*s == c)
-			s++;
+		s++;
 		dest[i] = ft_substr(s, 0, word_len(s, c));
-		if (!dest)
-			return (free_all(dest, i));
+		if (!dest[i])
+			return (free_all(dest, i - 1));
 		s += word_len(s, c);
 		i++;
 	}
-	dest[i] = NULL;
+	dest[count] = NULL;
 	return (dest);
-}
-
-#include <stdio.h>
-int main()
-{
-	char str[] = "  hello   worldsadwsd  a sss";
-	char c = ' ';
-	char **a = ft_split(str,c);
-	int i = 0;
-	//printf("%s",a);
-	while (a[i])
-	{
-		printf("%s\n", a[i]);
-		free(a[i]);
-		i++;
-	}
-	free(a);
 }

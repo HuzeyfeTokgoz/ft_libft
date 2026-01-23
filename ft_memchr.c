@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 22:30:07 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/22 23:33:23 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/23 14:53:36 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,4 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		i++;
 	}
 	return (NULL);
-}
-
-#include <stdio.h>
-int main(){
-	char s[] = "12ss345";
-	int c = 's';
-	char *d = (char *)ft_memchr(s,c,5);
-	printf("%s", d);
 }

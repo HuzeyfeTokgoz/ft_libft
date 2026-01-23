@@ -6,13 +6,11 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 12:51:36 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/11 19:51:52 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/23 12:23:02 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	isascii(int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);

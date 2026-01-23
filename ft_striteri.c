@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 10:19:36 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/15 16:20:17 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/23 12:54:14 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,17 +26,4 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		f(i, &s[i]);
 		i++;
 	}
-}
-
-static void deneme(unsigned int i, char *s)
-{
-	if (i % 2 == 0)
-	{
-		s[i] -= 32;
-	}
-}
-int main(){
-	char *s = "merhaba";
-	ft_striteri(s, deneme);
-	printf("%s", s);
 }

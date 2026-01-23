@@ -6,15 +6,13 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 12:52:13 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/15 15:03:26 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/23 15:02:46 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
-	{
-		return (c + 32);
-	}
+		c -= 32;
 	return (c);
 }
