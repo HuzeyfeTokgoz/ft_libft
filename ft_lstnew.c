@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.com.t +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 15:27:10 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/23 16:27:24 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/24 22:18:19 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
