@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 17:43:26 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/23 19:24:07 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/25 14:12:25 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 // 	}
 // 	printf("%s", "nul");
 // 	ft_lstadd_front(&head, ft_lstnew("dünya"));
-	
+//
 // 	tmp = head;
 
 // 	while (tmp)

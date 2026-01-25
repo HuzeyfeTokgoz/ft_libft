@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hutokgoz <hutokgoz@student.42kocaeli.com.t +#+  +:+       +#+        */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/24 23:15:51 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/25 00:21:43 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/25 14:10:57 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (lst && f)
 	{
@@ -38,7 +38,7 @@ void ft_lstiter(t_list *lst, void (*f)(void *))
 // int main(){
 // 	t_list *node1;
 // 	t_list *node2;
-	
+//
 // 	char *s1 = ft_strdup("hello");
 // 	char *s2 = ft_strdup("world");
 // 	node1 = ft_lstnew(s1);

@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 14:29:22 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/23 16:30:06 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/25 14:13:10 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ char	**ft_split(char const *s, char c)
 	while (count > i)
 	{
 		while (*s == c)
-		s++;
+			s++;
 		dest[i] = ft_substr(s, 0, word_len(s, c));
 		if (!dest[i])
 			return (free_all(dest, i - 1));
