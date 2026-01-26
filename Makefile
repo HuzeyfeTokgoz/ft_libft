@@ -14,10 +14,11 @@ SRCS    = ft_atoi.c ft_isalnum.c ft_isdigit.c ft_memcmp.c ft_memset.c \
 
 OBJS    = $(SRCS:.c=.o)
 
-$(NAME): $(OBJS)
-	ar rc $(NAME) $(OBJS)
 
 all: $(NAME)
+	
+$(NAME): $(OBJS)
+	ar rc $(NAME) $(OBJS)
 
 clean:
 	rm -f $(OBJS)

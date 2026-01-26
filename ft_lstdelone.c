@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hutokgoz <hutokgoz@student.42kocaeli.com.t +#+  +:+       +#+        */
+/*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 21:36:55 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/24 23:47:51 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/26 21:12:41 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	}
 }
 
-// void dellst(void *content)
-// {
-// 	free(content);
-// }
+void dellst(void *content)
+{
+	free(content);
+}
 
 // int main()
 // {

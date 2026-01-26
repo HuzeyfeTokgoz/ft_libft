@@ -6,11 +6,9 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 12:51:31 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/11 19:51:07 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/25 14:32:34 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isalpha(int c)
 {

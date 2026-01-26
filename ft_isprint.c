@@ -6,17 +6,13 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 12:51:47 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/07 20:10:54 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/25 14:32:52 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
-	{
 		return (1);
-	}
 	return (0);
 }

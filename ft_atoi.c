@@ -6,11 +6,9 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 18:20:28 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/22 22:09:36 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/25 14:32:18 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {
