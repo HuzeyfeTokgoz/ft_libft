@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 12:51:25 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/06 12:54:44 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/27 21:15:53 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 int	ft_isalnum(int c)
 {
 	if (ft_isalpha(c) || ft_isdigit(c))
-	{
 		return (1);
-	}
 	return (0);
 }
