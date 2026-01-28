@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 18:48:42 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/25 20:06:09 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/28 20:33:52 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,10 @@ static int	word_len(long n)
 {
 	int	len;
 
-	len = 1;
-	if (n < 0)
-	{
+	len = 0;
+	if (n <= 0)
 		len++;
-		n *= -1;
-	}
-	while (n > 9)
+	while (n != 0)
 	{
 		n = n / 10;
 		len++;
@@ -38,7 +35,7 @@ char	*ft_itoa(int n)
 
 	nb = n;
 	len = word_len(nb);
-	dest = (char *)malloc(sizeof(char) * len + 1);
+	dest = (char *)malloc(sizeof(char) * (len + 1));
 	if (!dest)
 		return (NULL);
 	dest[len--] = '\0';
@@ -47,7 +44,7 @@ char	*ft_itoa(int n)
 	if (nb < 0)
 	{
 		dest[0] = '-';
-		nb *= -1;
+		nb = -nb;
 	}
 	while (nb > 0)
 	{

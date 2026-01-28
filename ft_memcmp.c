@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 22:52:32 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/26 19:54:14 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/28 19:11:33 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	size_t			i;
 
 	i = 0;
+	if (!s1 || !s2)
+		return (0);
 	str1 = (unsigned char *)s1;
 	str2 = (unsigned char *)s2;
 	while (i < n)

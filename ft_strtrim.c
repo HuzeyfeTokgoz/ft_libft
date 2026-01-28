@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 16:49:12 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/25 14:54:08 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/28 20:26:43 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ static int	ft_setcheck(const char *str, int c)
 {
 	int	i;
 
+	if (!str)
+		return (0);
 	i = 0;
 	while (str[i])
 	{

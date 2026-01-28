@@ -27,7 +27,6 @@ Kütüphaneyi oluşturmak için terminale şu komutu yazın: **make**
 Bu işlem, ana dizinde libft.a dosyasını oluşturacaktır.
 
 ### Makefile Kuralları
-
 `make` / `make all`: fonksiyonları derler.
 
 `make clean`: Nesne (.o) dosyalarını siler.
@@ -37,6 +36,13 @@ Bu işlem, ana dizinde libft.a dosyasını oluşturacaktır.
 `make re`: Tüm projeyi temizleyip yeniden derler.
 
 ## Kaynaklar (Resources)
+
+### Kullanılan Kütüphaneler
+`stdlib.h` = size_t NULL malloc free kullanımı için kullanıldı.
+
+`unistd.h` = write fonksiyonu için kullanıldı.
+
+`fcntl.h` = open fonksiyonu için kullanıldı.
 
 ### Dokümantasyon:
 Standart libc fonksiyonları için Linux man sayfaları kullanılmıştır.
@@ -50,4 +56,4 @@ AI, özellikle ft_split fonksiyonundaki bellek sızıntılarını (memory leaks)
 Projenin ikinci bölümündeki karmaşık algoritma yapılarını anlamak amacıyla destek alınmıştır.
 
 #### Kontrol:
-AI tarafından önerilen tüm mantık yapıları, 42 Norm kurallarına ve proje gereksinimlerine uygun şekilde tarafımca manuel olarak düzenlenmiştir.
+42 Norm kurallarına ve proje gereksinimlerine uygun şekilde tarafımca manuel olarak düzenlenmiştir.

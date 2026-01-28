@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 09:41:26 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/23 12:41:12 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/28 20:12:15 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int				s_len;
+	size_t			s_len;
 	char			*dest;
 	unsigned int	i;
 

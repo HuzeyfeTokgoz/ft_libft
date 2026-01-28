@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 12:30:22 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/26 19:56:39 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/28 22:31:37 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,13 @@ char	*ft_strdup(const char *s)
 	size_t	size;
 	size_t	i;
 
-	i = 0;
+	if (!s)
+		return (NULL);
 	size = ft_strlen(s);
 	dest = (char *)malloc(size + 1);
 	if (!dest)
 		return (NULL);
+	i = 0;
 	while (s[i])
 	{
 		dest[i] = s[i];
