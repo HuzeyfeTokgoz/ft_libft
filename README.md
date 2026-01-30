@@ -26,6 +26,8 @@ Kütüphaneyi oluşturmak için terminale şu komutu yazın: **make**
 
 Bu işlem, ana dizinde libft.a dosyasını oluşturacaktır.
 
+Kütüphane kullanımı: `#include "libft.a"`
+
 ### Makefile Kuralları
 `make` / `make all`: fonksiyonları derler.
 

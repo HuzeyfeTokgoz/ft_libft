@@ -6,7 +6,7 @@
 /*   By: hutokgoz <hutokgoz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 13:43:35 by hutokgoz          #+#    #+#             */
-/*   Updated: 2026/01/29 17:11:33 by hutokgoz         ###   ########.fr       */
+/*   Updated: 2026/01/29 20:07:52 by hutokgoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,22 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	dst_len;
-	size_t	src_len;
 	size_t	i;
+	size_t	d_len;
+	size_t	s_len;
 
-	if ((!src || !dst) && size == 0)
-		return (0);
-	src_len = ft_strlen(src);
-	dst_len = 0;
-	while (dst[dst_len] && dst_len < size)
-		dst_len++;
-	if (dst_len == size)
-		return (size + src_len);
+	s_len = ft_strlen((char *)src);
+	if (!dst && size == 0)
+		return (s_len);
+	d_len = ft_strlen(dst);
 	i = 0;
-	while (src[i] && (dst_len + i + 1) < size)
+	if (size <= d_len)
+		return (size + s_len);
+	while (src[i] && d_len + i < size - 1)
 	{
-		dst[dst_len + i] = src[i];
+		dst[d_len + i] = src[i];
 		i++;
 	}
-	dst[dst_len + i] = '\0';
-	return (dst_len + src_len);
+	dst[d_len + i] = '\0';
+	return (d_len + s_len);
 }
