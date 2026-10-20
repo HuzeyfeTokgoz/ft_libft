@@ -26,7 +26,7 @@ Kütüphaneyi oluşturmak için terminale şu komutu yazın: **make**
 
 Bu işlem, ana dizinde libft.a dosyasını oluşturacaktır.
 
-Kütüphane kullanımı: `#include "libft.a"`
+Kütüphane kullanımı: `#include "libft.h"`
 
 ### Makefile Kuralları
 `make` / `make all`: fonksiyonları derler.
@@ -43,8 +43,6 @@ Kütüphane kullanımı: `#include "libft.a"`
 `stdlib.h` = size_t NULL malloc free kullanımı için kullanıldı.
 
 `unistd.h` = write fonksiyonu için kullanıldı.
-
-`fcntl.h` = open fonksiyonu için kullanıldı.
 
 ### Dokümantasyon:
 Standart libc fonksiyonları için Linux man sayfaları kullanılmıştır.
